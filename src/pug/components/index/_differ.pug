@@ -1,0 +1,29 @@
+section.section.differ.swiper-slide
+  .container.differ__container
+    h2.title.differ__title Отличия виртуальной реальности от дополненной
+    .differ__inner-container
+      .swiper-wrapper 
+        .differ__item.differ-item.swiper-slide
+          h3.title.differ-item__title Виртуальная реальность
+          .differ-item__img
+            img(src=require('../../../assets/img/vr.png').default, alt="VR")
+          .differ-item__text Отличается от дополненной реальности (AR) тем, 
+                            |что видимая действительность искусственна. 
+                            |Пользователю предлагают полное погружение, 
+                            |задействуя дополнительные органы чувств. 
+                            |Мы внедряем новейшие разработки VR — используем не только шлем, а ещё перчатки, костюмы и контроллеры движения
+        .differ__item.differ-item.swiper-slide
+            h3.title.differ-item__title Дополненная реальность
+            .differ-item__img.differ-item__img--ar
+              img(src=require('../../../assets/img/ar.png').default, alt="AR")
+            .differ-item__text Технология, с помощью которой в видимую действительность помещают виртуальные объекты. 
+                                |Представьте, что вы на презентации архитектора надеваете специальные очки, 
+                                |и на пустом столе появляется макет здания. Движением руки вы сможете вращать объект, приближать, 
+                                |отдалять или даже что-то в нём поменять.
+      .differ__swiper-buttons.differ-swiper-buttons  
+        .differ-swiper-buttons__prev 
+          include ../../../assets/img/icons/arrow.svg
+        .differ-swiper-buttons__text Листайте
+        .differ-swiper-buttons__next 
+          include ../../../assets/img/icons/arrow.svg
+

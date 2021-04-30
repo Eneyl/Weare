@@ -1,0 +1,21 @@
+$isDev: true;
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-display: swap;
+    font-family: '#{$font-family}';
+    font-style: normal;
+    font-weight: #{$weight};
+    @if $isDev {
+      src: url('../../../assets/fonts/#{$url}.woff2') format('woff2'),
+        url('../../../assets/fonts/#{$url}.woff') format('woff');
+      //url('../../../assets/fonts/#{$url}.ttf') format('ttf');
+    } @else {
+      src: url('../assets/fonts/#{$url}.woff2') format('woff2'),
+        url('../assets/fonts/#{$url}.woff') format('woff');
+      //url('../assets/fonts/#{$url}.ttf') format('ttf');
+    }
+  }
+}
+
+// ../assets/fonts/#{$url}.woff2 - for BUILD
+// ../../../assets/fonts/#{$url}.woff2 - for DEV

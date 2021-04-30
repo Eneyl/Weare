@@ -1,0 +1,9 @@
+mixin menuItem(title, href)
+  -var atrClass = attributes.class
+  if atrClass
+    li(class="nav__item")
+      a(class= "nav__link" + " " + attributes.class)= title
+  else
+    li(class="nav__item")
+      a(class= "nav__link" ,href= href)= title
+    

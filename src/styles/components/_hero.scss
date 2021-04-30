@@ -1,0 +1,51 @@
+.hero {
+  background: no-repeat 65% -4% url('../../assets/img/main-bg-helmet.png');
+  background-size: 122%;
+  &__container {
+    padding-left: 47px;
+  }
+  &__helmet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 14px;
+  }
+  &__title {
+    margin-top: -45px;
+    margin-bottom: 11px;
+    font-family: 'NeueMachina-Light', sans-serif;
+    font-size: 40px;
+    line-height: 1;
+    span {
+      font-family: 'NeueMachina-Bold', sans-serif;
+    }
+  }
+  &__descr {
+    padding-right: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 140%;
+    letter-spacing: 0.3px;
+    
+  }
+
+  &__achievement {
+    margin-top: 38px;
+  }
+}
+
+.hero-achievement {
+  &__item {
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-family: 'NeueMachina-Bold', sans-serif;
+    text-transform: uppercase;
+    &::before {
+      content: '/';
+      font-size: 20px;
+      color: #1E4FC6;
+      padding-right: 0.3em;
+    }
+
+  }
+}

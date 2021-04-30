@@ -1,0 +1,57 @@
+.complex-solution {
+  &__container {
+  }
+  &__title {
+    margin-bottom: 26px;
+  }
+  &__text {
+    display: none;
+  }
+
+  &__inner-container {
+    padding-left: 20px;
+  }
+
+  &__item {
+    
+    margin-bottom: 10px;
+  }
+}
+
+.complex-solution-item {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  min-height: 152px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &--vr {
+    background-image: url('../../assets/img/develop-vr.png');
+  }
+
+  &--ar {
+    background-image: url('../../assets/img/ar-for-business.png');
+  }
+
+  &__link-icon {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 0;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    padding-right: 30px;
+    font-family: NeueMachina-Bold;
+    font-size: 18px;
+  }
+
+  &__link-detail {
+    display: none;
+  }
+}
