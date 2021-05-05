@@ -1,0 +1,55 @@
+.team{
+  &__container{
+    
+  }
+  &__title{
+    margin-bottom: 45px;
+    
+  }
+  &__inner-container{
+    .swiper-slide-next, .swiper-slide-prev {
+      opacity: 0.7;
+    }
+  }
+  &__card{
+    display: flex;
+    max-width: 81%;
+  }
+  &__position{
+    font-size: 14px;
+    opacity: 0.6;
+    writing-mode: vertical-lr;
+  }
+  &__portret {
+    padding-right: 7px;
+    img {
+      margin-bottom: 7px;
+      
+    }
+  }
+  &__name {
+    font-size: 16px;
+  }
+}
+
+
+.team-swiper-buttons {
+  padding: 15px 0;
+  position: absolute;
+  bottom: 33px;
+  right: 30px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  &__prev {
+    transform: rotate(180deg);
+  }
+  &__pagination {
+    margin: 0 10px;
+    font-size: 20px;
+    font-family: 'NeueMachina-Bold', sans-serif;
+  }
+  &__next {
+
+  }
+}  

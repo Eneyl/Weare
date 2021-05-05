@@ -7,3 +7,7 @@ mixin menuItem(title, href)
     li(class="nav__item")
       a(class= "nav__link" ,href= href)= title
     
+mixin statisticsItem(num, text)
+  li.statistics__item.statistics-item
+    p.statistics-item__num= num
+    p.statistics-item__text= text

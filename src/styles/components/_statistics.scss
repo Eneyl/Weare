@@ -1,0 +1,38 @@
+.statistics {
+  background: no-repeat url('../../assets/img/stat-bg.png');
+  background-size: 131%;
+  background-position: -43% bottom;
+  &__container {
+  }
+  &__title {
+    margin-bottom: 17px;
+  }
+  &__inner-container {
+    padding-left: 20px;
+  }
+  &__text {
+    opacity: 0.8;
+    margin-bottom: 38px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+  }
+  &__item {
+    
+  }
+}
+
+.statistics-item {
+  flex: 48%;
+  &__num {
+    font-family: 'NeueMachina-Light', sans-serif;
+    line-height: 1.3;
+    font-size: 30px;
+  }
+  &__text {
+    font-size: 14px;
+  }
+}

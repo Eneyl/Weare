@@ -69,6 +69,10 @@ p {
   }
 }
 
+.swiper-buttons--disabled {
+  opacity: 0.3;
+}
+
 .overlay {
   position: fixed;
   z-index: 2;

@@ -1,4 +1,28 @@
 section.section.case.swiper-slide
   .container.case__container
-    .title.case__title 
-    
+    .swiper-wrapper
+      .case__item.swiper-slide
+        .title.case__title Дизайн интерьера частной квартиры
+        .case__inner-container 
+          .case__text Инновационный квартал Премиального уровня с авторской архитектурой и современными технологиями на берегу реки Москвы.
+          .case__img
+            img(src=require('../../../assets/img/case1.png').default, alt="")
+          .case__tags Выполнение Дизайн проекта в VR, Инженерный проект, Комплектация объекта, Выполнение отделочных работ 
+          a(href="").case__link Подробнее
+            include ../../../assets/img/icons/long-arrow.svg
+      .case__item.swiper-slide
+        .title.case__title Дизайн интерьера частной квартиры
+        .case__inner-container 
+          .case__text Инновационный квартал Премиального уровня с авторской архитектурой и современными технологиями на берегу реки Москвы.
+          .case__img
+            img(src=require('../../../assets/img/case1.png').default, alt="")
+          .case__tags Выполнение Дизайн проекта в VR, Инженерный проект, Комплектация объекта, Выполнение отделочных работ 
+          a(href="").case__link Подробнее
+            include ../../../assets/img/icons/long-arrow.svg
+            
+    .case__swiper-buttons.case-swiper-buttons  
+      .case-swiper-buttons__prev 
+        include ../../../assets/img/icons/arrow.svg
+      .case-swiper-buttons__pagination
+      .case-swiper-buttons__next 
+        include ../../../assets/img/icons/arrow.svg

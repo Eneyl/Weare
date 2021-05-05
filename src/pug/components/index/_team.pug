@@ -1,0 +1,22 @@
+section.section.team.swiper-slide
+  .container.team__container
+    h2.title.team__title Наша команда
+    .team__inner-container
+      .swiper-wrapper
+        .team__card.swiper-slide
+          .team__portret 
+            img(src=require('../../../assets/img/team1.png').default, alt="")
+            .team__name Денис Петров
+          .team__position Дизайнер интерьеров
+        .team__card.swiper-slide
+          .team__portret 
+            img(src=require('../../../assets/img/team1.png').default, alt="")
+            .team__name Денис Петров
+          .team__position Дизайнер интерьеров
+    .team__swiper-buttons.team-swiper-buttons  
+      .team-swiper-buttons__prev 
+        include ../../../assets/img/icons/arrow.svg
+      .team-swiper-buttons__pagination
+      .team-swiper-buttons__next 
+        include ../../../assets/img/icons/arrow.svg
+      
