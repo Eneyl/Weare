@@ -12,12 +12,82 @@
   }
   &__logo {
     width: 140px;
+    z-index: 101;
+  }
+  &__lang {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    z-index: 103;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    opacity: 0;
+    &--mobile {
+      opacity: 1;
+      transform: translateX(-50vw);
+    }
+    button {
+      font-family: 'NeueMachina-Bold', sans-serif;
+      &:not(:last-child) {
+        margin-right: 15px; 
+      }
+    }
+   
+
   }
   &__burger {
     --burger-width: 40px;
     --burger-height: 30px;
     --burger-line-height: 3px;
-
+    z-index: 103;
     @include burger;
+  }
+  &__nav{
+    z-index: 102;
+  }
+}
+
+.nav {
+  background: no-repeat center url('../../assets/img/menu-mobile-bg.svg'), linear-gradient(112.73deg, #203B7C 1.67%, #492F74 100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  padding-top: 95px;
+  @include stop-scroll
+  &--active {
+    transform: translateX(0);
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+  }
+  &__row {
+
+  }
+  &__item {
+    margin-bottom: 15px;
+    list-style: decimal-leading-zero;
+    list-style-position: outside;
+    position: relative;
+    &::marker {
+      font-family: 'NeueMachina-Bold', sans-serif;
+      font-size: 12px;
+      vertical-align: 5px
+    }
+  }
+  &__link {
+    font-size: 21px;
+  }
+
+  &__consultation {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 12px;
+  }
+  &__tel {
+
   }
 }

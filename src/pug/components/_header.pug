@@ -3,5 +3,27 @@ header.header
     .header__logo
       a(href="#") 
         include ../../assets/img/icons/logo.svg
-    .header__burger(data-id='burger')
-    
+    .header__lang(data-id='header-lang')
+      button EN 
+      button RU
+    .header__burger(data-id='header-burger')
+    .header__nav.nav(data-id='header-nav')
+      nav.nav__list
+        .nav__row
+          +navItem('Главная', '#')
+          +navItem('Технологиии', '#')
+          +navItem('Услуги', '#')
+          +navItem('Кейсы', '#')
+          +navItem('О компании', '#')
+        .nav__row
+          +navItem('Сертификаты', '#')
+          +navItem('Команда', '#')
+          +navItem('Отзывы', '#')
+          +navItem('Блог', '#')
+          +navItem('Контакты', '#')
+      a.nav__consultation Получить консультацию
+      a.nav__tel(href="tel:+79281234567") +7 928 123 45 67
+
+
+
+

@@ -5,6 +5,9 @@ export const mediaQuery = {
   md3Min: window.matchMedia('(min-width: 768px)'),
 };
 
+/**
+ * @returns {HTMLElement}
+ */
 export const getElementByDataId = (parent, value) => parent.querySelector(`[data-id = "${value}"]`);
 
 export const createElement = (tag, classes) => {
